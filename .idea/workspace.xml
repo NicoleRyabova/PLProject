@@ -5,19 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f49884b2-c7b2-421e-be1e-747fb2919475" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/appflowy/core/BaseClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/appflowy/core/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/appflowy/ui/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/appflowy/ui/pages/ProductPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FirstTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/appflowy/ui/AuthorizationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/appflowy/ui/NavigationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/appflowy/core/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/appflowy/ui/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appflowy/ui/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/appflowy/ui/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appflowy/ui/pages/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FirstTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appflowy/ui/TextTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +35,7 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/com/appflowy/core/BaseClass.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/appflowy/ui/pages/LoginPage.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/appflowy/ui/pages/ProductPage.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/FirstTests.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/com/appflowy/ui/TextTests.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -66,12 +61,21 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Nicole\IdeaProjects\PLProject\src\test" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.appflowy.ui" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.FirstTests.emptyEmailTest">
-    <configuration name="FirstTests" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AuthorizationTests">
+    <configuration name="AuthorizationTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PLProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.appflowy.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.appflowy.ui" />
+      <option name="MAIN_CLASS_NAME" value="com.appflowy.ui.AuthorizationTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -79,22 +83,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTests.authorizationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TextTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PLProject" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTests" />
-      <option name="METHOD_NAME" value="authorizationTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="com.appflowy.ui.TextTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTests.emptyEmailTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TextTests.emptyEmailTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PLProject" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTests" />
+      <option name="MAIN_CLASS_NAME" value="com.appflowy.ui.TextTests" />
       <option name="METHOD_NAME" value="emptyEmailTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -103,10 +106,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTests.findButtonsForStartForFreeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TextTests.findButtonsForStartForFreeTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PLProject" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTests" />
+      <option name="MAIN_CLASS_NAME" value="com.appflowy.ui.TextTests" />
       <option name="METHOD_NAME" value="findButtonsForStartForFreeTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -115,10 +118,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTests.findNavigationItemsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TextTests.findNavigationItemsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PLProject" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTests" />
+      <option name="MAIN_CLASS_NAME" value="com.appflowy.ui.TextTests" />
       <option name="METHOD_NAME" value="findNavigationItemsTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -129,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.FirstTests.emptyEmailTest" />
-        <item itemvalue="TestNG.FirstTests.authorizationTest" />
-        <item itemvalue="TestNG.FirstTests.findNavigationItemsTest" />
-        <item itemvalue="TestNG.FirstTests.findButtonsForStartForFreeTest" />
-        <item itemvalue="TestNG.FirstTests" />
+        <item itemvalue="TestNG.AuthorizationTests" />
+        <item itemvalue="TestNG.TextTests.emptyEmailTest" />
+        <item itemvalue="TestNG.TextTests.findButtonsForStartForFreeTest" />
+        <item itemvalue="TestNG.TextTests" />
+        <item itemvalue="TestNG.TextTests.findNavigationItemsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -170,6 +173,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/appflowy/ui/TextTests.java</url>
+          <line>84</line>
+          <properties class="FirstTests">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
