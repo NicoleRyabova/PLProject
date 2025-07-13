@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f49884b2-c7b2-421e-be1e-747fb2919475" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/appflowy/ui/AuthorizationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/appflowy/ui/NavigationTests.java" afterDir="false" />
+    <list default="true" id="f49884b2-c7b2-421e-be1e-747fb2919475" name="Changes" comment="Добавила API тесты на Rest Assured, создала новый общий класс для ссылок">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/appflowy/core/Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/appflowy/ui/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appflowy/ui/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/appflowy/ui/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appflowy/ui/pages/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FirstTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/appflowy/ui/TextTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +58,7 @@
       <recent name="com.appflowy.ui" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AuthorizationTests">
+  <component name="RunManager" selected="TestNG.NavigationTests.findNavigationItemsTest">
     <configuration name="AuthorizationTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PLProject" />
       <extension name="coverage">
@@ -83,10 +76,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AuthorizationTests.ContinueWithTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PLProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="com.appflowy.ui.TextTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.appflowy.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.appflowy.ui" />
+      <option name="MAIN_CLASS_NAME" value="com.appflowy.ui.AuthorizationTests" />
+      <option name="METHOD_NAME" value="ContinueWithTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTest.testLoginPageWithEmailCheck" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PLProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.appflowy.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.appflowy.api" />
+      <option name="MAIN_CLASS_NAME" value="com.appflowy.api.FirstTest" />
+      <option name="METHOD_NAME" value="testLoginPageWithEmailCheck" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NavigationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PLProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.appflowy.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.appflowy.ui" />
+      <option name="MAIN_CLASS_NAME" value="com.appflowy.ui.NavigationTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -94,34 +129,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextTests.emptyEmailTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="NavigationTests.findNavigationItemsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PLProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="com.appflowy.ui.TextTests" />
-      <option name="METHOD_NAME" value="emptyEmailTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TextTests.findButtonsForStartForFreeTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PLProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="com.appflowy.ui.TextTests" />
-      <option name="METHOD_NAME" value="findButtonsForStartForFreeTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TextTests.findNavigationItemsTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PLProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="com.appflowy.ui.TextTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.appflowy.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.appflowy.ui" />
+      <option name="MAIN_CLASS_NAME" value="com.appflowy.ui.NavigationTests" />
       <option name="METHOD_NAME" value="findNavigationItemsTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -132,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.NavigationTests.findNavigationItemsTest" />
         <item itemvalue="TestNG.AuthorizationTests" />
-        <item itemvalue="TestNG.TextTests.emptyEmailTest" />
-        <item itemvalue="TestNG.TextTests.findButtonsForStartForFreeTest" />
-        <item itemvalue="TestNG.TextTests" />
-        <item itemvalue="TestNG.TextTests.findNavigationItemsTest" />
+        <item itemvalue="TestNG.NavigationTests" />
+        <item itemvalue="TestNG.AuthorizationTests.ContinueWithTest" />
+        <item itemvalue="TestNG.FirstTest.testLoginPageWithEmailCheck" />
       </list>
     </recent_temporary>
   </component>
@@ -149,6 +166,21 @@
       <option name="presentableId" value="Default" />
       <updated>1745329995189</updated>
     </task>
+    <task id="LOCAL-00001" summary="Разделила один класс с тестами на три, добавила шаги">
+      <created>1752152947309</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752152947309</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Добавила API тесты на Rest Assured, создала новый общий класс для ссылок">
+      <created>1752414237934</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1752414237934</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,20 +206,10 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/appflowy/ui/TextTests.java</url>
-          <line>84</line>
-          <properties class="FirstTests">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Разделила один класс с тестами на три, добавила шаги" />
+    <MESSAGE value="Добавила API тесты на Rest Assured, создала новый общий класс для ссылок" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавила API тесты на Rest Assured, создала новый общий класс для ссылок" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
