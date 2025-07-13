@@ -19,7 +19,7 @@ public class AuthorizationTests extends BaseClass {
 
     @BeforeMethod
     public void beforeMethod(){
-        Selenide.open(productPage.getAddress());
+        Selenide.open(address.getAddress());
 
     }
     @Test(description = "Проверка кнопок регистрации")
@@ -32,7 +32,7 @@ public class AuthorizationTests extends BaseClass {
     @Test(description = "Проверка кол-ва кнопок 'Continue with'")
     public void ContinueWithTest(){
         loginPage.startForFreeNavigation.click();
-        webdriver().shouldHave(url(loginPage.getRegistrationAddress()));
+        webdriver().shouldHave(url(address.getRegistrationAddress()));
 
         for (int i = 0; i <= 3; i++) {
             loginPage.continueWithElement.get(i)
@@ -50,7 +50,7 @@ public class AuthorizationTests extends BaseClass {
     @Test(description = "Тест валидации пустого email")
     public void emptyEmailTest(){
         loginPage.startForFreeNavigation.click();
-        webdriver().shouldHave(url(loginPage.getRegistrationAddress()));
+        webdriver().shouldHave(url(address.getRegistrationAddress()));
         loginPage.continueWithElement.get(0).click();
         $x("//section[@aria-label='Notifications alt+T']").shouldBe(visible);
     }

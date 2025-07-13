@@ -15,7 +15,7 @@ public class TextTests extends BaseClass {
 
    @BeforeMethod
     public void beforeMethod(){
-        Selenide.open(productPage.getAddress());
+        Selenide.open(address.getAddress());
 
     }
     @Test(description = "Проверка текстовых элементов на главной странице")

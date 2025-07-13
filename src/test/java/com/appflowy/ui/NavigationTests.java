@@ -17,16 +17,16 @@ import static com.codeborne.selenide.WebDriverConditions.url;
 public class NavigationTests extends BaseClass {
     @BeforeMethod
     public void beforeMethod(){
-        Selenide.open(productPage.getAddress());
+        Selenide.open(address.getAddress());
 
     }
     @Test(description = "Тест навигации по разделам сайта")
     public void findNavigationItemsTest(){
         productPage.productNavigationButton.click(); // кликаем по 1 кнопке
-        webdriver().shouldHave(url(productPage.getAddress())); // проверяем ссылку
+        webdriver().shouldHave(url(address.getAddress())); // проверяем ссылку
         //Нажимаем на кнопку Download
         productPage.downloadNavigationButton.click();
-        webdriver().shouldHave(url(productPage.getNavigationBarLink(0))); // проверяем ссылку на "https://appflowy.com/download"
+        webdriver().shouldHave(url(address.getNavigationBarLink(0))); // проверяем ссылку на "https://appflowy.com/download"
 
         // Проверяем, что появилось выпадающее меню
         productPage.downloadNavigationButton.hover();
@@ -36,16 +36,16 @@ public class NavigationTests extends BaseClass {
         productPage.downloadPopoverMenuElements.get(0)
                 .shouldBe(visible)
                 .shouldHave(exactText("iOS & Android")).click();
-        webdriver().shouldHave(url(productPage.getNavigationBarLink(1))); // проверяем ссылку на  "https://appflowy.com/download#ios-and-android"
+        webdriver().shouldHave(url(address.getNavigationBarLink(1))); // проверяем ссылку на  "https://appflowy.com/download#ios-and-android"
 
         // Для кнопки macOS & Windows & Linux
         productPage.downloadNavigationButton.hover();
         productPage.downloadPopoverMenuElements.get(1)
                 .shouldBe(visible)
                 .shouldHave(exactText("macOS & Windows & Linux")).click();
-        webdriver().shouldHave(url(productPage.getNavigationBarLink(2))); // проверяем ссылку на  "https://appflowy.com/download#macOS"
+        webdriver().shouldHave(url(address.getNavigationBarLink(2))); // проверяем ссылку на  "https://appflowy.com/download#macOS"
 
         productPage.pricingNavigationButton.click();
-        webdriver().shouldHave(url(productPage.getNavigationBarLink(3))); // проверяем ссылку на  "https://appflowy.com/pricing"
+        webdriver().shouldHave(url(address.getNavigationBarLink(3))); // проверяем ссылку на  "https://appflowy.com/pricing"
     }
 }

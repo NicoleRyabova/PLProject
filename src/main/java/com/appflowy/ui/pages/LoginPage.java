@@ -6,7 +6,6 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginPage { //СТРАНИЦА ДЛЯ АВТОРИЗАЦИИ
-    private final String addressForRegistration = "https://appflowy.com/app";
     public final String[] expectedTextsOnLoginPageStartingElements = {"Продолжить с эл. почтой", "Продолжить с Google", "Continue with Apple","More Options" };
     public final String[] expectedTextsOnLoginPageAllElements = {"Продолжить с эл. почтой", "Продолжить с Google", "Continue with Apple","Продолжить с GitHub", "Продолжить с Discord" };
 
@@ -21,11 +20,4 @@ public class LoginPage { //СТРАНИЦА ДЛЯ АВТОРИЗАЦИИ
     public SelenideElement startForFree2;
     @FindBy(css = "button.bg-primary")
     public SelenideElement downloadNow;
-
-    //ГЕТТЕР ДЛЯ ВОЗВРАЩЕНИЯ АДРЕСА
-    @Step("Получить адрес для регистрации")
-    public String getRegistrationAddress(){
-        return addressForRegistration;
-    }
-
 }

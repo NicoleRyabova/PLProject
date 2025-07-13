@@ -6,9 +6,6 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.support.FindBy;
 
 public class ProductPage { //Класс с кнопками и атрибутами главной страницы сайта
-    //ССЫЛКИ САЙТА
-    private final String address = "https://appflowy.com/";
-    private final String[] navigationBarLinks = {"https://appflowy.com/download", "https://appflowy.com/download#ios-and-android", "https://appflowy.com/download#macOS", "https://appflowy.com/pricing"};
 
     // КНОПКИ НАВИГАЦИИ
     @FindBy(xpath = "//button[@class='navigation-item navigation-item-product']")
@@ -28,21 +25,4 @@ public class ProductPage { //Класс с кнопками и атрибута�
 
     public final String[] expectedCategoriesInCommunityButton = {"Community", "Connect with us", "Featured"};
     public final String[] expectedCategoriesInResourcesButton = {"Docs", "Learn", "Featured"};
-
-
-    // геттеры для получения адреса(они private)
-    @Step("Получить главный адрес страницы")
-    public String getAddress() {
-        return address;
-    }
-    @Step("Получить ссылку навигации с индексом {index}")
-    public String getNavigationBarLink(int index) {
-        if (index >= 0 && index < navigationBarLinks.length) {
-            return navigationBarLinks[index];
-        } else {
-            throw new IllegalArgumentException("Не валидный индекс: " + index);
-        }
-    }
-
-
 }
